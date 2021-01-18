@@ -52,7 +52,9 @@ const StartButton = styled.button`
   margin-left: 10px;
 `;
 
-function Main() {
+function Main({ history }) {
+  const input1RM = () => history.push("/weeklyworkout");
+
   return (
     <TitleBlock>
       <h1>SMOLOV SQUAT</h1>
@@ -61,7 +63,7 @@ function Main() {
         <InsertForm>
           <Input />
           <p className="p2">kg</p>
-          <StartButton>START</StartButton>
+          <StartButton onClick={input1RM}>START</StartButton>
         </InsertForm>
       </InsertFormPosition>
       <p className="p3">Shut up and squat!</p>

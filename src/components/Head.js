@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { IoArrowBackSharp } from "react-icons/io5";
+import { withRouter } from "react-router-dom";
 
 const HeadBlock = styled.div`
   padding: 15px;
@@ -25,15 +26,19 @@ const GoBack = styled.div`
   margin-right: 10px;
 `;
 
-function Head() {
+function Head({ history }) {
   return (
     <HeadBlock>
       <GoBack>
-        <IoArrowBackSharp />
+        <IoArrowBackSharp
+          onClick={() => {
+            history.goBack();
+          }}
+        />
       </GoBack>
       <h1>Smolov Squat</h1>
     </HeadBlock>
   );
 }
 
-export default Head;
+export default withRouter(Head);

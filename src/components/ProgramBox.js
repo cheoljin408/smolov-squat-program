@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { IoArrowForwardSharp } from "react-icons/io5";
+import { withRouter } from "react-router-dom";
 
 const Box = styled.div`
   width: 450px;
@@ -40,7 +41,7 @@ const GoForward = styled.div`
   text-align: right;
 `;
 
-function ProgramBox({ week, description }) {
+function ProgramBox({ week, description, link, history }) {
   return (
     <Box>
       <div>
@@ -48,10 +49,13 @@ function ProgramBox({ week, description }) {
         <p className="p2">{description}</p>
       </div>
       <GoForward>
-        <IoArrowForwardSharp />
+        <IoArrowForwardSharp
+          onClick={() => {
+            history.push(link);
+          }}
+        />
       </GoForward>
     </Box>
   );
 }
-
-export default ProgramBox;
+export default withRouter(ProgramBox);
