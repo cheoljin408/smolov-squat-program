@@ -32,10 +32,19 @@ const TextBoxBlock = styled.div`
 `;
 
 function Week12() {
-  const weeks = ['Week 1', 'Week 2'];
+  const weeks = [
+    {
+      week: 'Week 1',
+      link: "/weeklyworkout/week12/workout1"
+    },
+    {
+      week: 'Week 2',
+      link: "/weeklyworkout/week12/workout2"
+    },
+  ];
 
   const boxs = weeks.map((text) => (
-    <ProgramBox week={text} />
+    <ProgramBox week={text.week} link={text.link}/>
   ));
 
   return (
@@ -49,10 +58,27 @@ function Week12() {
 }
 
 function Week36() {
-  const weeks = ['Week 3', 'Week 4', 'Week 5', 'Week 6'];
+  const weeks = [
+    {
+      week: 'Week 3',
+      link: "/weeklyworkout/week36/workout3"
+    },
+    {
+      week: 'Week 4',
+      link: "/weeklyworkout/week36/workout4"
+    },
+    {
+      week: 'Week 5',
+      link: "/weeklyworkout/week36/workout5"
+    },
+    {
+      week: 'Week 6',
+      link: "/weeklyworkout/week36/workout6"
+    },
+  ];
 
   const boxs = weeks.map((text) => (
-    <ProgramBox week={text} />
+    <ProgramBox week={text.week} link={text.link} />
   ));
 
   return (
@@ -84,10 +110,27 @@ function Week78() {
 }
 
 function Week912() {
-  const weeks = ['Week 9', 'Week 10', 'Week 11', 'Week 12'];
+  const weeks = [
+    {
+      week: 'Week 9',
+      link: "/weeklyworkout/week912/workout9"
+    },
+    {
+      week: 'Week 10',
+      link: "/weeklyworkout/week912/workout10"
+    },
+    {
+      week: 'Week 11',
+      link: "/weeklyworkout/week912/workout11"
+    },
+    {
+      week: 'Week 12',
+      link: "/weeklyworkout/week912/workout12"
+    },
+  ];
 
   const boxs = weeks.map((text) => (
-    <ProgramBox week={text} />
+    <ProgramBox week={text.week} link={text.link} />
   ));
 
   return (
@@ -101,10 +144,15 @@ function Week912() {
 }
 
 function Week13() {
-  const weeks = ['Week 13'];
+  const weeks = [
+    {
+      week: 'Week 13',
+      link: "/weeklyworkout/week13/workout13"
+    },
+  ];
 
   const boxs = weeks.map((text) => (
-    <ProgramBox week={text} />
+    <ProgramBox week={text.week} link={text.link} />
   ));
 
   return (

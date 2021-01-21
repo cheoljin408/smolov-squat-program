@@ -5,6 +5,7 @@ import Template from "./components/Template";
 import Main from "./components/Main";
 import { Route, Switch } from "react-router-dom";
 import Week from "./components/Week";
+import Workout from "./components/Workout";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" component={Main} />
           <Route exact path="/weeklyworkout" component={WeeklyWorkout} />
           <Route exact path="/weeklyworkout/:weeknum" component={Week} />
+          <Route exact path="/weeklyworkout/:weeknum/:workout" component={Workout} />
         </Switch>
       </Template>
     </>
