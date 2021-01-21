@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const TitleBlock = styled.div`
   /* border-top: 1px solid #e9ecef;
@@ -52,8 +53,7 @@ const StartButton = styled.button`
   margin-left: 10px;
 `;
 
-function Main({ history }) {
-  const input1RM = () => history.push("/weeklyworkout");
+function Main() {
 
   return (
     <TitleBlock>
@@ -63,7 +63,9 @@ function Main({ history }) {
         <InsertForm>
           <Input />
           <p className="p2">kg</p>
-          <StartButton onClick={input1RM}>START</StartButton>
+          <StartButton>
+            <Link to="/weeklyworkout" style={{ textDecoration: 'none', color: 'inherit' }}>START</Link>
+          </StartButton>
         </InsertForm>
       </InsertFormPosition>
       <p className="p3">Shut up and squat!</p>
