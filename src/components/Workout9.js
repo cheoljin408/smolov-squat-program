@@ -40,7 +40,7 @@ const WorkoutBlock = styled.div`
     }
 `;
 
-function Workout3() {
+function Workout9() {
     return (
         <DayBlock>
             {/* Monday */}
@@ -50,10 +50,22 @@ function Workout3() {
                 </div>
                 <div>
                     <div className="div1">
-                        <p className="p2">4 sets x 9 reps @ 70%</p>
+                        <p className="p2">1 sets x 3 reps @ 65%</p>
                         <div>
                             <input type="checkbox"/>
                         </div>
+                    </div>
+                    <div className="div1">
+                        <p className="p2">1 sets x 4 reps @ 75%</p>
+                        <input type="checkbox"/>
+                    </div>
+                    <div className="div1">
+                        <p className="p2">3 sets x 4 reps @ 85%</p>
+                        <input type="checkbox"/>
+                    </div>
+                    <div className="div1">
+                        <p className="p2">1 sets x 5 reps @ 90%</p>
+                        <input type="checkbox"/>
                     </div>
                 </div>
             </WorkoutBlock>
@@ -64,24 +76,26 @@ function Workout3() {
                 </div>
                 <div>
                     <div className="div1">
-                        <p className="p2">5 sets x 7 reps @ 75%</p>
+                        <p className="p2">1 sets x 3 reps @ 60%</p>
                         <div>
                             <input type="checkbox"/>
                         </div>
                     </div>
-                </div>
-            </WorkoutBlock>
-            {/* Friday */}
-            <WorkoutBlock>
-                <div>
-                    <p className="p1">Friday</p>
-                </div>
-                <div>
                     <div className="div1">
-                        <p className="p2">7 sets x 5 reps @ 80%</p>
-                        <div>
-                            <input type="checkbox"/>
-                        </div>
+                        <p className="p2">1 sets x 3 reps @ 70%</p>
+                        <input type="checkbox"/>
+                    </div>
+                    <div className="div1">
+                        <p className="p2">1 sets x 4 reps @ 80%</p>
+                        <input type="checkbox"/>
+                    </div>
+                    <div className="div1">
+                        <p className="p2">1 sets x 3 reps @ 90%</p>
+                        <input type="checkbox"/>
+                    </div>
+                    <div className="div1">
+                        <p className="p2">2 sets x 5 reps @ 85%</p>
+                        <input type="checkbox"/>
                     </div>
                 </div>
             </WorkoutBlock>
@@ -92,10 +106,18 @@ function Workout3() {
                 </div>
                 <div>
                     <div className="div1">
-                        <p className="p2">10 sets x 3 reps @ 85%</p>
+                        <p className="p2">1 sets x 4 reps @ 65%</p>
                         <div>
                             <input type="checkbox"/>
                         </div>
+                    </div>
+                    <div className="div1">
+                        <p className="p2">1 sets x 4 reps @ 70%</p>
+                        <input type="checkbox"/>
+                    </div>
+                    <div className="div1">
+                        <p className="p2">5 sets x 4 reps @ 80%</p>
+                        <input type="checkbox"/>
                     </div>
                 </div>
             </WorkoutBlock>
@@ -103,4 +125,4 @@ function Workout3() {
     );
 }
 
-export default Workout3;
+export default Workout9;
